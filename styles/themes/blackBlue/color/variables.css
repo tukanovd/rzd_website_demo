@@ -1,0 +1,27 @@
+:root.black-blue {
+    --stroke-transparent: #000000;
+    --stroke-primary: #000000;
+    --stroke-primary-white: #FFF;
+    --stroke-primary-light: #000000;
+    --stroke-primary-hover: #000000;
+    --stroke-common: #000000;
+    --stroke-controls: #000000;
+    --stroke-focus: #000000;
+    --stroke-success: #000000;
+
+    --text-primary-black: #000000;
+    --text-primary-white: #000000;
+    --text-primary: #000000;
+    --text-primary-hover: #000000;
+    --text-secondary: #000000;
+    --text-success: #000000;
+    --text-disabled: #000000;
+
+    --bg-page: #69C0FE;
+    --bg-primary: #69C0FE;
+    --bg-primary-white: #69C0FE;
+    --bg-primary-black: #69C0FE;
+    --bg-primary-light: #69C0FE;
+    --bg-common: #69C0FE;
+    --bg-secondary: #69C0FE;
+}

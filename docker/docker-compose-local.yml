@@ -1,0 +1,77 @@
+version: '3.7'
+
+x-logging: &logging
+  driver: "json-file"
+  options:
+    max-size: "1m"
+    max-file: "1"
+
+
+x-nginx-storybook-volumes: &nginx_storybook_volumes
+  - ./../docker/nginx/vhost.conf:/etc/nginx/conf.d/default.conf
+  - ./../storybook-static/:/app/public/storybook/
+
+x-nginx-website-volumes: &nginx_website_volumes
+  - ./../:/app/
+
+services:
+  builder:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      target: frontend
+    restart: always
+    volumes: *nginx_website_volumes
+    command: tail -f
+    networks:
+      - traefik
+    logging: *logging
+
+  frontend:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      target: frontend
+    restart: always
+    networks:
+      - traefik
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+      # traefik v2
+      - traefik.http.routers.rds-frontend.rule=Host(`public.rds.localhost`)
+      - traefik.http.routers.rds-frontend.service=rds-frontend
+      - traefik.http.services.rds-frontend.loadbalancer.server.port=3000
+    logging: *logging
+
+  storybook:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      target: storybook
+      args:
+        - ENABLE_AUTOINDEX=true
+    restart: always
+    networks:
+      - traefik
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+      # traefik v2
+      - traefik.http.routers.rds-storybook.rule=Host(`public.rds.localhost`) && PathPrefix(`/storybook`)
+      - traefik.http.routers.rds-storybook.service=rds-storybook
+      - traefik.http.services.rds-storybook.loadbalancer.server.port=80
+#    volumes: *nginx_storybook_volumes
+    logging: *logging
+    healthcheck:
+      test: [ "CMD-SHELL", "wget -O /dev/null http://localhost/_health || exit 1" ]
+      start_period: 1s
+      interval: 5s
+      timeout: 5s
+      retries: 3
+
+networks:
+  internal:
+  traefik:
+    external: true
+    name: traefik

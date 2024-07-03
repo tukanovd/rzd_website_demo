@@ -1,0 +1,45 @@
+version: '3.8'
+
+x-logging: &logging
+  driver: "json-file"
+  options:
+    max-size: "1m"
+    max-file: "2"
+
+x-deploy: &deploy
+  replicas: 1
+  update_config:
+    parallelism: 1
+    delay: 15s
+    failure_action: rollback
+
+services:
+  frontend:
+    image: ${CI_REGISTRY_IMAGE}/frontend:${TAG}
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      target: frontend
+    environment:
+      MGN_ONLY: 12345
+    networks:
+      - traefik
+    deploy:
+      <<: *deploy
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik
+        # traefik v2
+        - traefik.http.routers.frontend-${CI_PROJECT_PATH_SLUG}-${CI_COMMIT_REF_SLUG}.rule=Host(`${APP_HOST}`)
+        - traefik.http.routers.frontend-${CI_PROJECT_PATH_SLUG}-${CI_COMMIT_REF_SLUG}.service=frontend-${CI_PROJECT_PATH_SLUG}-${CI_COMMIT_REF_SLUG}
+        - traefik.http.services.frontend-${CI_PROJECT_PATH_SLUG}-${CI_COMMIT_REF_SLUG}.loadbalancer.server.port=3000
+        - traefik.http.routers.frontend-${CI_PROJECT_PATH_SLUG}-${CI_COMMIT_REF_SLUG}.tls=true
+        - traefik.http.routers.frontend-${CI_PROJECT_PATH_SLUG}-${CI_COMMIT_REF_SLUG}.tls.certresolver=le
+    logging: *logging
+
+networks:
+  traefik:
+    driver: overlay
+    attachable: true
+    external: true
+    name: traefik

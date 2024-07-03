@@ -1,0 +1,68 @@
+/* Do not edit directly */
+/* Generated on Sat, 21 Jan 2023 13:30:26 GMT */
+/* done */
+:root.default {
+    --Primary: #E21A1A;
+    --Success: #00985F;
+    --Grey-500: #000;
+    --Grey-400: #606060;
+    --Grey-300: #828282;
+    --Grey-200: #A9A9A9;
+    --Grey-150: #C5C5C5;
+    --Grey-50: #D3D3D3;
+    --Grey-40: #D3D3D34C;
+    --Grey-47: #00000078;
+    --Grey-4: #0000000A;
+    --Grey-100: #D3D3D3;
+    --Blue-500: #394A58;
+    --Blue-400: #455D70;
+    --Blue-300: #68798B;
+    --Blue-200: #909CAA;
+    --Blue-100: #BFC5CE;
+    --Yellow-500: #85865F;
+    --Yellow-400: #A9AA79;
+    --Yellow-300: #CECCA0;
+    --Yellow-200: #DDDCB4;
+    --Yellow-100: #EBEAD4;
+    --Dirt-500: #626B45;
+    --Dirt-400: #828B5C;
+    --Dirt-300: #A3A86B;
+    --Dirt-200: #B2B989;
+    --Dirt-100: #D3D7BD;
+    --DarkBlue-500: #003356;
+    --DarkBlue-400: #00507C;
+    --DarkBlue-300: #0066A1;
+    --DarkBlue-200: #007FB1;
+    --DarkBlue-100: #8AB0D2;
+    --TextSecondary: #828282;
+    --PrimaryHover: #DD1919E6;
+    --TextLight: #fff;
+}
+
+:root.default {
+    --stroke-transparent: transparent;
+    --stroke-primary: #E21A1A;
+    --stroke-primary-white: #FFF;
+    --stroke-primary-light: #E21A1A;
+    --stroke-primary-hover: #DD1919E6;
+    --stroke-common: #D3D3D3;
+    --stroke-controls: #606060;
+    --stroke-focus: #0066A1;
+    --stroke-success: #00985F;
+
+    --text-primary-black: #000000;
+    --text-primary-white: #FFF;
+    --text-primary: #E21A1A;
+    --text-primary-hover: #E21A1A;
+    --text-secondary: #828282;
+    --text-success: #00985F;
+    --text-disabled: #C5C5C5;
+
+    --bg-page: #FFF;
+    --bg-primary: #E21A1A;
+    --bg-primary-white: #FFF;
+    --bg-primary-black: #000000;
+    --bg-primary-light: #DD1919E6;
+    --bg-common: #D3D3D3;
+    --bg-secondary: #D3D3D34C;
+}

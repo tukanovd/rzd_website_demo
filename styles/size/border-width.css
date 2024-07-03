@@ -1,0 +1,16 @@
+.border-border-width_zero {
+  border-width: var(--border-width_zero)
+}
+.border-width_base {
+  /* TODO temp fix for buttons in default theme */
+  border-width: var(--border-width_base) !important;
+}
+.border-blind-width_base {
+  border-width: var(--border-blind-width_base)
+}
+.border-width_hover {
+  border-width: var(--border-width_hover)
+}
+.border-b-width_base {
+  border-bottom-width: var(--border-width_base)
+}

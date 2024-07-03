@@ -1,0 +1,21 @@
+.border-success {
+  border-color: var(--stroke-success)
+}
+.border-controls {
+  border-color: var(--stroke-controls)
+}
+.border-common {
+  border-color: var(--stroke-common)
+}
+.border-a-white {
+  border-color: var(--stroke-a-white)
+}
+.border-a-black {
+  border-color: var(--stroke-a-black)
+}
+.border-primaryHover {
+  border-color: var(--stroke-primary-hover)
+}
+.border-custom-transparent {
+  border-color: var(--stroke-transparent);
+}

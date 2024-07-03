@@ -1,0 +1,3 @@
+.shadow-default {
+    box-shadow: var(--shadow-box-default);
+}

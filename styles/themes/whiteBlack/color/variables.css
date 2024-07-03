@@ -1,0 +1,64 @@
+:root.black-white {
+    --Primary: #FFFFFF;
+    --Success: none;
+    --Grey-500: #000;
+    --Grey-400: #000;
+    --Grey-300: #828282;
+    --Grey-200: #A9A9A9;
+    --Grey-150: #000;
+    --Grey-50: #000;
+    --Grey-40: none;
+    --Grey-47: none;
+    --Grey-4: #0000000A;
+    --Grey-100: #000;
+    --Blue-500: #394A58;
+    --Blue-400: #455D70;
+    --Blue-300: #68798B;
+    --Blue-200: #909CAA;
+    --Blue-100: #BFC5CE;
+    --Yellow-500: #85865F;
+    --Yellow-400: #A9AA79;
+    --Yellow-300: #CECCA0;
+    --Yellow-200: #DDDCB4;
+    --Yellow-100: #EBEAD4;
+    --Dirt-500: #626B45;
+    --Dirt-400: #828B5C;
+    --Dirt-300: #A3A86B;
+    --Dirt-200: #B2B989;
+    --Dirt-100: #D3D7BD;
+    --DarkBlue-500: #003356;
+    --DarkBlue-400: #00507C;
+    --DarkBlue-300: none;
+    --DarkBlue-200: #007FB1;
+    --DarkBlue-100: none;
+    --TextSecondary: #000;
+    --PrimaryHover: #fff;
+    --TextLight: #fff;
+}
+:root.white-black {
+    --stroke-transparent: #FFF;
+    --stroke-primary: #000000;
+    --stroke-primary-white: #FFF;
+    --stroke-primary-light: #FFF;
+    --stroke-primary-hover: #FFF;
+    --stroke-common: #FFF;
+    --stroke-controls: #FFF;
+    --stroke-focus: #FFF;
+    --stroke-success: #000000;
+
+    --text-primary-black: #FFF;
+    --text-primary-white: #FFF;
+    --text-primary: #FFF;
+    --text-primary-hover: #FFF;
+    --text-secondary: #FFF;
+    --text-success: #FFF;
+    --text-disabled: #FFF;
+
+    --bg-page: #000000;
+    --bg-primary: #000000;
+    --bg-primary-white: #000000;
+    --bg-primary-black: #FFF;
+    --bg-primary-light: #000000;
+    --bg-common: #FFF;
+    --bg-secondary: #000000;
+}

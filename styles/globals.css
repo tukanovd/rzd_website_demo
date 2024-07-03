@@ -1,0 +1,6 @@
+@import "./index.css";
+@import "./custom.css";
+@import '~simplebar-core/dist/simplebar.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

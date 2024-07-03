@@ -1,0 +1,4 @@
+:root.default {
+    --shadow-color-default: #0000000A;
+    --shadow-box-default: 0 4px 20px var(--shadow-color-default);
+}

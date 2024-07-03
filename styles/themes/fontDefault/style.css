@@ -1,0 +1,117 @@
+.default .text-b1 {
+  font-size: var(--font-size-11);
+  line-height: var(--line-height-10);
+  font-family: var(--font-rail-GR);
+  font-weight: var(--font-weight-1);
+}
+.default .text-h1 {
+  font-size: var(--font-size-10);
+  line-height: var(--line-height-8);
+  font-family: var(--font-rail-GR);
+  font-weight: var(--font-weight-1);
+}
+.default .text-h2 {
+  font-size: var(--font-size-7);
+  line-height: var(--line-height-5);
+  font-family: var(--font-rail-GR);
+  font-weight: var(--font-weight-1);
+}
+.default .text-h3 {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-4);
+  font-family: var(--font-rail-55);
+  font-weight: var(--font-weight-1);
+}
+.default .text-p1 {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-4);
+  font-family: var(--font-rail-55);
+  font-weight: var(--font-weight-1);
+}
+.default .text-p2 {
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-1);
+  font-family: var(--font-rail-GR);
+  font-weight: var(--font-weight-1);
+}
+.default .text-p2b {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-2);
+  font-family: var(--font-rail-GR);
+  font-weight: var(--font-weight-2);
+}
+.default .text-p3 {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-2);
+  font-family: var(--font-rail-GR);
+  font-weight: var(--font-weight-1);
+}
+.default .text-blind-A {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: var(--font-rail-55);
+  font-weight: var(--font-weight-1);
+}
+.default .text-blind-AA {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--font-rail-55);
+  font-weight: var(--font-weight-1);
+}
+.default .text-blind-AAA {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: var(--font-rail-55);
+  font-weight: var(--font-weight-1);
+}
+
+@media (max-width: 768px) {
+  .default .text-b1 {
+    font-size: var(--font-size-8);
+    line-height: var(--line-height-8);
+    font-family: var(--font-rail-GR);
+    font-weight: var(--font-weight-1);
+  }
+  .default .text-h1 {
+    font-size: var(--font-size-8);
+    line-height: var(--line-height-8);
+    font-family: var(--font-rail-GR);
+    font-weight: var(--font-weight-1);
+  }
+  .default .text-h2 {
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-5);
+    font-family: var(--font-rail-GR);
+    font-weight: var(--font-weight-1);
+  }
+  .default .text-h3 {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+    font-family: var(--font-rail-GR);
+    font-weight: var(--font-weight-1);
+  }
+  .default .text-p1 {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-4);
+    font-family: var(--font-rail-55);
+    font-weight: var(--font-weight-1);
+  }
+  .default .text-p2 {
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-4);
+    font-family: var(--font-rail-55);
+    font-weight: var(--font-weight-1);
+  }
+  .default .text-p2b {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-4);
+    font-family: var(--font-rail-55);
+    font-weight: var(--font-weight-1);
+  }
+  .default .text-p3 {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-2);
+    font-family: var(--font-rail-55);
+    font-weight: var(--font-weight-1);
+  }
+}

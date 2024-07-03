@@ -1,0 +1,35 @@
+---
+variables:
+  TAG: leonid_test1-${CI_COMMIT_SHORT_SHA}
+  GIT_STRATEGY: clone
+
+stages:
+  - build
+  - deploy
+
+dockerBuild:
+  stage: build
+  tags:
+    - build-leonid
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --cache=false --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/docker/Dockerfile --destination ${CI_REGISTRY_IMAGE}/frontend:${TAG} --build-arg "VERSION=$CI_COMMIT_SHORT_SHA" --target frontend
+   # - /kaniko/executor --cache=true --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/docker/Dockerfile --destination ${CI_REGISTRY_IMAGE}/storybook:${TAG} --build-arg "VERSION=$CI_COMMIT_SHORT_SHA" --target storybook
+
+deploy_test_10.0.0.98:
+  stage: deploy
+  script:
+    - docker login -u ${DEPLOY_TOKEN_USERNAME} -p ${DEPLOY_TOKEN_PASSWORD} ${CI_REGISTRY}
+    - set -a && source .env && set +a
+    - docker stack deploy --compose-file docker/docker-compose-prod.yml --with-registry-auth --resolve-image changed rds
+  only:
+    - New_dev
+  environment:
+    name: test
+    url: https://dzv.rzdsupport.ru
+  variables:
+    APP_HOST: dzv.rzdsupport.ru
+  tags: [ "deploy_test_10.0.0.98" ]

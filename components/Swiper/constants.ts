@@ -1,0 +1,11 @@
+export const SLIDES_GAP = { px: 20, class: "gap-5" };
+export const SLIDES_NO_GAP = { px: 0, class: "gap-0" };
+export const MIN_SLIDES_PER_VIEW = 1;
+export const MAX_SLIDES_PER_VIEW = 3;
+export const DEFAULT_SLIDE_WIDTH = 100;
+export const DEFAULT_DURATION = 450;
+export const SLIDE_WIDTH_MULTIPLIER_DESKTOP = 1;
+export const SLIDE_WIDTH_MULTIPLIER_MOBILE = 0.88;
+export const TRANSFORM_MULTIPLIER_DESKTOP = 1;
+export const TRANSFORM_MULTIPLIER_MOBILE = 0.98;
+export const SWITCH_SLIDE_DELAY = 600;

@@ -1,0 +1,11 @@
+export * from "./getNews";
+export * from "./getPageSlices";
+export * from "./getSubscribeSliceData";
+export * from "./getAdministrationData";
+export * from "./getContacts";
+export * from "./getAboutData";
+export * from "./getDirectorates";
+export * from "./getImportantInfo";
+export * from "./stations";
+export * from "./services";
+export { administrationData } from "./dataStubs/administration";

@@ -1,0 +1,30 @@
+.bg-color-primary {
+  background-color: var(--bg-primary)
+}
+.bg-color-common {
+  background-color: var(--bg-common)
+}
+.bg-color-secondary {
+  background-color: var(--bg-secondary)
+}
+.bg-color-common {
+  background-color: var(--bg-common)
+}
+.bg-color-primaryHover {
+  background-color: var(--bg-primary-light)
+}
+.bg-color-primary-white {
+  background-color: var(--bg-primary-white)
+}
+.bg-color-primary-black {
+  background-color: var(--bg-primary-black)
+}
+.bg-a-blue {
+  background-color: var(--bg-a-blue)
+}
+.bg-a-white {
+  background-color: var(--bg-a-white)
+}
+.bg-a-black {
+  background-color: var(--bg-a-black)
+}

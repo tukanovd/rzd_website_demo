@@ -1,0 +1,8 @@
+:root.black-white {
+    --border-radius_zero: 0;
+    --border-radius_medium: 0.5rem;
+    --border-width_zero: 0px;
+    --border-width_base: 1px;
+    --border-blind-width_base: 1px;
+    --border-width_hover: 2px
+}

@@ -1,0 +1,70 @@
+body {
+    background-color: var(--bg-page);
+}
+
+a {
+    width: fit-content;
+}
+
+li {list-style: none;}
+li::before {
+    content: "\2022";
+    color: var(--text-primary);
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.outline-darkBlue-300 {
+    outline-color: var(--stroke-focus)
+}
+.outline-primaryHover {
+    outline-color: var(--stroke-primary-hover)
+}
+.outline-success {
+    outline-color: var(--stroke-success)
+}
+.color-primary-black-important {
+    color: var(--text-primary-black) !important;
+}
+
+.h-input-s {
+    height: 2.75rem; /* 44px */
+}
+.h-input-m {
+    height: 3.25rem; /* 52px */
+}
+.h-input-l {
+    height: 5rem; /* 80px */
+}
+
+.h-button-l {
+    height: 3.25rem; /* 52px */
+}
+
+.min-w-120 {
+    min-width: 7.5rem; /* 120px */
+}
+
+.py-18 {
+    padding-top: 4.5rem; /* 72px */
+    padding-bottom: 4.5rem; /* 72px */
+}
+.px-30 {
+    padding-left: 7.5rem; /* 120px */
+    padding-right: 7.5rem; /* 120px */
+}
+
+.pb-25 {
+    padding-bottom: 6.25rem; /* 100px */
+}
+
+.pb-35 {
+    padding-bottom: 8.75rem; /* 140px */
+}
+
+
+:root.black-white {
+    --c-box-shadow: none;
+}

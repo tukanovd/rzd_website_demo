@@ -1,0 +1,27 @@
+.color-primaryHover {
+  color: var(--text-primary-hover)
+}
+.color-success {
+  color: var(--text-success)
+}
+.color-secondary {
+  color: var(--text-secondary)
+}
+.color-primary-white {
+  color: var(--text-primary-white)
+}
+.color-disabled {
+  color: var(--text-disabled)
+}
+.color-primary-black {
+  color: var(--text-primary-black)
+}
+.color-primary {
+  color: var(--text-primary)
+}
+.color-a-white {
+  color: var(--text-a-white)
+}
+.color-a-black {
+  color: var(--text-a-black)
+}

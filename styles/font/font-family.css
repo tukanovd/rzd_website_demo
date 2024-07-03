@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "FSRAIL55";
+    src: url("../../public/fonts/FSRAIL55.otf") format('opentype');
+}
+@font-face {
+    font-family: "FSRAIL56";
+    src: url("../../public/fonts/FSRAIL56.otf") format('opentype');
+}
+@font-face {
+    font-family: "FSRAIL75";
+    src: url("../../public/fonts/FSRAIL75.otf") format('opentype');
+}
+@font-face {
+    font-family: "FSRAIL76";
+    src: url("../../public/fonts/FSRAIL76.otf") format('opentype');
+}
+@font-face {
+    font-family: "RussianRailGProExtend";
+    src: url("../../public/fonts/RussianRailGProExtend.otf") format('opentype');
+}
+@font-face {
+    font-family: "RussianRailGProBold";
+    src: url("../../public/fonts/RussianRailGProBold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "RussianRailGProExtendedBold";
+    src: url("../../public/fonts/RussianRailGProExtendedBold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "RussianRailGRegular";
+    src: url("../../public/fonts/RussianRailGRegular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "RussianRailGProMedium";
+    src: url("../../public/fonts/RussianRailGProMedium.otf") format('opentype');
+}

@@ -1,0 +1,6 @@
+.rounded-border-radius_medium {
+  border-radius: var(--border-radius_medium)
+}
+.rounded-border-radius_zero {
+  border-radius: var(--border-radius_zero)
+}
